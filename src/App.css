@@ -3,3 +3,8 @@
   margin-right: auto;
   margin-left: auto;
 }
+
+h1,
+p {
+  margin: 0;
+}
