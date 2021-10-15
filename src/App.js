@@ -1,6 +1,6 @@
 import { Component } from "react";
 import shortid from "shortid";
-import "./App.css";
+import s from "./App.module.css";
 import ContactsForm from "./component/ContactsForm";
 import Filter from "./component/Filter";
 import ContactsList from "./component/ContactsList";
@@ -55,11 +55,14 @@ class App extends Component {
     );
 
     return (
-      <div className="phonebook">
-        <h1>Phonebook</h1>
+      <div className={s.phonebook}>
+        <h1 className={s.pageTitle}>Phonebook</h1>
         <ContactsForm onSubmit={this.onAddContact} />
-        <h2>Contacts</h2>
-        <Filter value={filter} onChange={this.onChangeFilter} />
+        <h2 className={s.title}>Contacts</h2>
+        {contacts.length > 1 && (
+          <Filter value={filter} onChange={this.onChangeFilter} />
+        )}
+        {/* <Filter value={filter} onChange={this.onChangeFilter} /> */}
         <ContactsList list={filteredContacts} onDelete={this.onDeleteContact} />
       </div>
     );
