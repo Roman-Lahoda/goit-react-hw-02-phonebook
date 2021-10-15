@@ -4,7 +4,6 @@ import s from "./ContactsForm.module.css";
 const initialState = {
   name: "",
   number: "",
-  filter: "",
 };
 
 class ContactsFrom extends Component {
