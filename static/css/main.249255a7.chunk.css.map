@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,WACE,WAAY,CACZ,iBAAkB,CAClB,gBACF,CAEA,QAGE,QACF","file":"main.249255a7.chunk.css","sourcesContent":[".phonebook {\r\n  width: 700px;\r\n  margin-right: auto;\r\n  margin-left: auto;\r\n}\r\n\r\nh1,\r\nh2,\r\np {\r\n  margin: 0;\r\n}\r\n"]}
